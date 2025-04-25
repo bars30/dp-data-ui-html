@@ -1,0 +1,137 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Inter', sans-serif;
+}
+:root {
+ --main-color: #C7EE57;
+ --gray: #3F3F46;
+}
+.container {
+ width: 92%;
+ margin: auto;
+}
+.invoice-card {
+ margin-top: 12px;
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: 0px 2px 4px  #4444443b ;
+}
+.invoice-card__header {
+ background-color: var(--main-color);
+ padding: 25px;
+ text-align: center;
+}
+.invoice-card__footer {
+ padding: 20px;
+ text-align: center;
+}
+.invoice-card__type {
+ width: fit-content;
+ margin: auto;
+ background-color: white;
+ padding: 6px 15px;
+ border-radius: 35px;
+ font-size: 14px;
+ color: var(--gray);
+}
+
+h2.invoice-card__title {
+ font-size: 24px;
+ margin: 10px 0;
+}
+.invoice-card__date {
+ font-size: 16px;
+ color: var(--gray);
+}
+.invoice-card__footer {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 50px;
+ height: 28px;
+}
+
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+.slider {
+ position: absolute;
+ cursor: pointer;
+ background-color: var(--gray); 
+ border-radius: 34px;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ transition: 0.4s;
+}
+
+.slider:before {
+ content: "";
+ position: absolute;
+ height: 22px;
+ width: 22px;
+ left: 3px;
+ bottom: 3px;
+ background-color: white;
+ border-radius: 50%;
+ transition: 0.4s;
+}
+
+input:checked + .slider {
+ background-color: #aed834;
+}
+
+input:checked + .slider:before {
+ transform: translateX(22px);
+}
+.invoice-card__lock {
+ color: var(--gray);
+}
+.transaction-card {
+ box-shadow: 0px 2px 4px #4444443b;
+ padding: 20px;
+ border-radius: 12px;
+ margin: 15px 0;
+}
+.transaction-card__title {
+ color: var(--gray);
+ margin-bottom: 12px;
+}
+.transaction-card__item {
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 12px;
+ align-items: center;
+}
+.transaction-card__item:last-child {
+ margin-bottom: 0px;
+}
+.transaction-card__item-title {
+ color: var(--gray);
+}
+.transaction-card__item-value {
+ font-size: 17px;
+ font-weight: 600;
+}
+.transaction-card__item-value {
+ font-size: 17px;
+}
+.transaction-card__item-value--btn {
+ font-size: 13px;
+ padding: 5px 10px;
+ color: var(--gray);
+ background-color: #F4F4F5;
+ border-radius: 25px;
+ border: 1px solid #E4E4E7;
+}
