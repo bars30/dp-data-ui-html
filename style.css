@@ -2,7 +2,8 @@
  padding: 0;
  margin: 0;
  box-sizing: border-box;
- font-family: 'Inter', sans-serif;
+ font-family: 'Inter 28pt';
+ font-weight: normal;
 }
 :root {
  --main-color: #C7EE57;
@@ -12,6 +13,9 @@
  width: 92%;
  margin: auto;
 }
+/* header {
+ background-color: #F5F5F5;
+} */
 .invoice-card {
  margin-top: 12px;
  border-radius: 12px;
@@ -104,9 +108,17 @@ input:checked + .slider:before {
  border-radius: 12px;
  margin: 15px 0;
 }
-.data-card__title {
+.data-card__item .data-card__title {
  color: var(--gray);
  margin-bottom: 12px;
+}
+.data-card__title {
+ margin-bottom: 12px;
+ font-size: 17px;
+ font-weight: 500;
+}
+.data-card__title--green {
+ color: #88B702;
 }
 .data-card__item {
  display: flex;
@@ -135,3 +147,61 @@ input:checked + .slider:before {
  border-radius: 25px;
  border: 1px solid #E4E4E7;
 }
+
+.data-card__title-cont {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 12px;
+}
+.data-card__title-cont .data-card__title {
+ margin-bottom: 0;
+}
+.quantity-cont {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.quantity-card.data-card {
+ width: 48%;
+ text-align: center;
+}
+.quantity-card__title {
+ color: var(--gray);
+ padding-bottom: 10px;
+}
+.quantity-card__value {
+ font-size: 20px;
+ font-weight: 500;
+}
+hr {
+ margin: 12px 0;
+ height: 2px;
+ background-color: #E4E4E7;
+ border-radius: 25px;
+ border: none;
+}
+.data-card__item-total .data-card__item-value {
+ font-size: 19px;
+}
+.data-card__item-total .data-card__item-title {
+ color: black;
+ font-size: 19px;
+}
+.data-card__item-value--btn.paid {
+ background-color: var(--main-color);
+ font-size: 14px;
+ color: black;
+ padding: 5px 15px;
+ border: none;
+}
+.data-card__item-value-net-profit {
+ color: #88B702;
+}
+
+
+
+
+
+
+
